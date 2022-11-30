@@ -9,14 +9,14 @@ namespace DataAccess.Model
 {
     public class Animal
     {
-        [System.ComponentModel.DataAnnotations.Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [System.ComponentModel.DataAnnotations.Key]
         public Guid Id { get; set; }
         public string Name { get; set; }
         public int Age { get; set; }
         public string Description { get; set; }
 
-
-        public Breed Breed{ get; set; }
+        public int BreedId { get; set; }
+        public Breed Breeds { get; set; }
     }
 }

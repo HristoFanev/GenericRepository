@@ -8,10 +8,11 @@ namespace DataAccess.Abstract
 {
     public interface IRepository<T> where T : class
     {
-        void GetAll();
-        T GetById(int id);
+        IEnumerable<T> GetAll();
+        T GetById(object id);
         void Create(T entity);
         void Update(T entity);
-        void Delete(int id);
+        void Delete(object id);
+        void Save();
     }
 }
