@@ -33,8 +33,8 @@ namespace DataAccess.Implementation
 
         public void Delete(object id)
         {
-            T ex = table.Find(id);
-            table.Remove(ex);
+            T e = table.Find(id);
+            table.Remove(e);
         }
 
         public IEnumerable<T> GetAll()
