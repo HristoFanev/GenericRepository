@@ -19,7 +19,7 @@ namespace GenericMVC
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}"
+                pattern: "{controller=Home}/{action=Welcome}/{id?}"
                 );
 
             app.Run();
